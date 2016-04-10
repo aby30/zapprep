@@ -1,0 +1,105 @@
+#home {
+    text-align: center;
+    padding: 5%;
+    margin-top: 3%;
+}
+#home {
+    background-image: url('/background workk/wall0.png');
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container {
+    width: 100%;
+
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.navbar-inverse {
+    background-image: transparent;
+    background-repeat: repeat-x;
+    border-radius: 4px;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+
+    border-bottom: 3px solid #e83e54;
+    /*border-top: 3px solid #e83e54;
+    background: -moz-linear-gradient(top, rgba(246,246,246,1) 0%, rgba(232,62,84,1) 0%, rgba(224,204,41,1) 96%, rgba(224,204,41,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(246,246,246,1)), color-stop(0%, rgba(232,62,84,1)), color-stop(96%, rgba(224,204,41,1)), color-stop(100%, rgba(224,204,41,1)));
+    background: -webkit-linear-gradient(top, rgba(246,246,246,1) 0%, rgba(232,62,84,1) 0%, rgba(224,204,41,1) 96%, rgba(224,204,41,1) 100%);
+    background: -o-linear-gradient(top, rgba(246,246,246,1) 0%, rgba(232,62,84,1) 0%, rgba(224,204,41,1) 96%, rgba(224,204,41,1) 100%);
+    background-color: transparent;*/
+    border-radius: 2px;
+}
+.mobii_nav {
+    -moz-box-shadow: 3px -3px 6px 5px #292929;
+    -webkit-box-shadow: 3px -3px 6px 5px #292929;
+    box-shadow: 3px -3px 6px 5px #292929;
+    font-weight: 600;
+    /*background-color: #e83e54;*/
+    background-color: #E0CC29;
+}
+.navbar {
+    background-color: #E0CC29;
+    margin-bottom: 0px;
+    height: 10%;
+}
+
+#features {
+    margin-bottom: 5%;
+}
+
+#footer {
+    background-color: black;
+    background-image: url('/background workk/footer.png');
+    padding: 6%;
+}
+.navbar-brand {
+    left: 10%;
+    position: absolute;
+}
+
+.navbar-right {
+    margin-right: 15% !important;
+}
+
+.carousel{
+
+      margin-top: 20px;
+      }
+      .carousel .item img{
+      margin: 0 auto; /* Align slide image horizontally center */
+      }
+      .bs-example{
+      margin: 20px;
+      }
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+
+.navbar-brand { transition: all .2s ease-in-out; }
+.navbar-brand:hover { transform: scale(1.2); }
+
+
+@media screen and (max-width: 991px) {
+
+    #myCarousel {
+        width:50%;
+    }
+
+    .navbar {
+        background-color: #E0CC29;
+        margin-bottom: 0px;
+        height: 5%;
+    }
+}
