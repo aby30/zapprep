@@ -18,7 +18,7 @@ html(lang="en")
 
   body
     
-    .main_cont(style="margin: 0 auto;overflow: hidden;")
+    .main_cont(style="margin: 0 auto;overflow: hidden;width: 100%;")
         .navbar.navbar-inverse.navbar-fixed-top.mobi.scroll-fixed-navbar(role="navigation")
             .container.mobii_nav(style="padding: 1%;")
                 .navbar-header
@@ -29,7 +29,7 @@ html(lang="en")
                         span.icon-bar
                         span.icon-bar
                                     
-                    a.navbar-brand(href="#home" style="font-size: 21px;font-weight:800;") <b>Zapprep</b>
+                    a.navbar-brand(href="#home" style="font-size: 21px;font-weight:800;top: -2px;") <img style="width: 20%;" src="img/logo_full.png" />
                     
                     
                 .navbar-collapse.collapse.navbar-right
@@ -46,9 +46,8 @@ html(lang="en")
                     .col-sm-6(style="padding: 5%;")
                         .row
                             .col-md-12
-                                h1
-                                    | 
-                                    strong  Your Personal Mentor for Exam Preparation.
+                                h3(style="font-size:20px;") 
+                                    strong  Your Personal Mentor for Exam Preparation
                         .row
                             .col-md-12
                                 h2| Get it from here
@@ -66,7 +65,7 @@ html(lang="en")
             
             #footer.row
                 .col-md-8(style="display: -webkit-inline-box;")
-                    strong(style="color: white;line-height:3;") FIND US ON
+                    strong(style="color: black;line-height:3;") FIND US ON
                     .social-icons(style="margin-left: 10%;")
                       a(href="https://www.facebook.com/Zap-Prep-Education-Services-170065906725829/").social-icon.social-icon--facebook
                         i.fa.fa-facebook
@@ -78,28 +77,7 @@ html(lang="en")
                         i.fa.fa-linkedin
                         .tooltip LinkedIn
                 .col-md-4
-                    label(style="color:white;line-height:3;")
+                    label(style="color:black;line-height:3;")
                       |© Copyright 2016  Zap Prep education services
 
               
-
-
-
-        
-    
-
-    script.
-        $(function() {
-            $('a[href*="#"]:not([href="#"])').click(function() {
-                if (location.pathname.replace(/^\\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                    if (target.length) {
-                        $('html, body').animate({
-                            scrollTop: target.offset().top
-                        }, 500);
-                        return false;
-                    }
-                }
-            });
-        });

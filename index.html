@@ -18,11 +18,11 @@
   </head>
 </html>
 <body>
-  <div style="margin: 0 auto;overflow: hidden;" class="main_cont">
+  <div style="margin: 0 auto;overflow: hidden;width: 100%;" class="main_cont">
     <div role="navigation" class="navbar navbar-inverse navbar-fixed-top mobi scroll-fixed-navbar">
       <div style="padding: 1%;" class="container mobii_nav">
         <div class="navbar-header">
-          <button data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle nav</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#home" style="font-size: 21px;font-weight:800;" class="navbar-brand"><b>Zapprep</b></a>
+          <button data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle nav</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="#home" style="font-size: 21px;font-weight:800;top: -2px;" class="navbar-brand"><img style="width: 20%;" src="img/logo_full.png" /></a>
         </div>
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
@@ -38,7 +38,7 @@
           <div style="padding: 5%;" class="col-sm-6">
             <div class="row">
               <div class="col-md-12">
-                <h1> <strong> Your Personal Mentor for Exam Preparation.</strong></h1>
+                <h3 style="font-size:20px;"> <strong> Your Personal Mentor for Exam Preparation</strong></h3>
               </div>
             </div>
             <div class="row">
@@ -58,32 +58,16 @@
         </div>
       </div>
       <div id="footer" class="row">
-        <div style="display: -webkit-inline-box;" class="col-md-8"><strong style="color: white;line-height:3;">FIND US ON</strong>
+        <div style="display: -webkit-inline-box;" class="col-md-8"><strong style="color: black;line-height:3;">FIND US ON</strong>
           <div style="margin-left: 10%;" class="social-icons"><a href="https://www.facebook.com/Zap-Prep-Education-Services-170065906725829/" class="social-icon social-icon--facebook"><i class="fa fa-facebook"></i>
               <div class="tooltip">Facebook</div></a><a href="https://plus.google.com/u/0/b/111327562943093738035/111327562943093738035/about" class="social-icon social-icon--google-plus"><i class="fa fa-google-plus"></i>
               <div class="tooltip">google-plus</div></a><a href="https://www.linkedin.com/company/zap-prep-education-services" class="social-icon social-icon--linkedin"><i class="fa fa-linkedin"></i>
               <div class="tooltip">LinkedIn</div></a></div>
         </div>
         <div class="col-md-4">
-          <label style="color:white;line-height:3;">© Copyright 2016  Zap Prep education services</label>
+          <label style="color:black;line-height:3;">© Copyright 2016  Zap Prep education services</label>
         </div>
       </div>
     </div>
   </div>
-  <script>
-    $(function() {
-        $('a[href*="#"]:not([href="#"])').click(function() {
-            if (location.pathname.replace(/^\\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                if (target.length) {
-                    $('html, body').animate({
-                        scrollTop: target.offset().top
-                    }, 500);
-                    return false;
-                }
-            }
-        });
-    });
-  </script>
 </body>
