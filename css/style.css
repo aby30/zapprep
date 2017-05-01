@@ -185,3 +185,63 @@ body {
       border: none;
     }
 }
+
+
+/*About Us page */
+.about__companyDetails {
+  text-align: center;
+  padding: 60px 6% 80px;
+  line-height: 30px;
+  min-height: 300px;
+}
+.about__companyDetailsTitle {
+  font-size: 28px;
+  font-weight: 200;
+  margin: 0px 0px 20px;
+}
+.about__contactDetailsMain {
+  /*display: table;
+  width: 100%;*/
+}
+.about__contactDetails, .about__contactDetailsMap {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+}
+.about__contactDetailsInner {
+  background-color: #bac2bb;
+  display: table;
+  width: 100%;
+}
+.about__contactDetails {
+  padding: 35px;
+}
+.about__contactAll {
+  background-color: rgb(175, 182, 176);
+  padding: 15%;
+}
+.about__contactDetailsTitle {
+  color: #fff;
+  font-size: 24px;
+  margin: 0px 0px 10px;
+}
+.about__contactDetailsAddress > span, .about__contactDetailsAddress > span, .about__contactDetailsEmail > span {
+  font-size: 17px;
+  color: rgb(85, 86, 88);
+  font-weight: 600;
+}
+.about__contactDetailsAddress,  .about__contactDetailsAddress, .about__contactDetailsEmail {
+  margin: 0px 0px 10px;
+  font-size: 14px;
+  font-weight: 200;
+}
+.about__companyDetailsContent {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .about__contactDetails, .about__contactDetailsMap {
+    display: block;
+    width: 100%;
+  }
+}
