@@ -1,76 +1,869 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Zap Prep</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="js/jquery-2.1.3.min.js"></script>
-    <!--link(rel="stylesheet" href="css/style.css")-->
-    <script src="js/jquery.min.js"></script>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  </head>
-</html>
-<body>
-  <div style="margin: 0 auto;overflow: hidden;width: 100%;" class="main_cont">
-    <div role="navigation" class="navbar navbar-inverse navbar-fixed-top mobi scroll-fixed-navbar">
-      <div style="padding: 1.2%;" class="container mobii_nav">
-        <div class="navbar-header">
-          <button data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle" style="z-index: 555;"><span class="sr-only">Toggle nav</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/index.html" style="font-size: 21px;font-weight:800;top: -2px;" class="navbar-brand"><img style="width: 20%;" src="img/logo_full.png" /></a>
-        </div>
-        <div class="navbar-collapse collapse navbar-right">
-          <ul class="nav navbar-nav">
-            <!--<li><a href="#home">Home</a></li>-->
-            <li style=""><a href="/terms.html" title="Terms">Terms & Policies</a></li>
-            <li style=""><a href="mailto:contact@zapprep.in" title="Contact Us">Contact Us</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div style="width: 101%;" class="container">
-      <div id="home" class="row">
-        <div style="margin-top:5%;">
-          <div style="padding: 7%;" class="col-sm-6">
-            <div class="row">
-              <div class="col-md-12">
-                <h3 style="font-size:20px;"> <strong>&nbsp;&nbsp;Your Personal Mentor for Exam Preparation</strong></h3>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
+<head>
+	<title>Zapprep</title>
 
-              </div>
-            </div>
-            <div class="row">
-              <div style="padding: 10%;" class="col-md-12">
-                <div class="play_store"><a href="https://play.google.com/store/apps/details?id=in.zapprep.ZapPrep&amp;hl=en"><img src="img/GooglePlay.png"></a></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="home_pic"><img src="img/home_app2.png" class="img-responsive"></div>
-          </div>
-        </div>
-      </div>
-      <div id="footer" class="row">
-        <div style="display: -webkit-inline-box;" class="col-md-8"><strong style="line-height:3;">FIND US ON</strong>
-          <div style="margin-left: 10%;" class="social-icons"><a href="https://www.facebook.com/Zap-Prep-Education-Services-170065906725829/" class="social-icon social-icon--facebook"><i class="fa fa-facebook"></i>
-              <div class="tooltip">Facebook</div></a><a href="https://plus.google.com/u/0/b/111327562943093738035/111327562943093738035/about" class="social-icon social-icon--google-plus"><i class="fa fa-google-plus"></i>
-              <div class="tooltip">google-plus</div></a><a href="https://www.linkedin.com/company/zap-prep-education-services" class="social-icon social-icon--linkedin"><i class="fa fa-linkedin"></i>
-              <div class="tooltip">LinkedIn</div></a></div>
-        </div>
-        <div class="col-md-4">
-          <label style="line-height:4;">© Copyright 2016  Zap Prep education services</label>
-        </div>
-      </div>
-    </div>
-  </div>
+	<!-- meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Zap Prep brings top mentors and video lessons for every subject on your mobile.">
+	<meta name="keywords" content="exams, Placement, IBPS, GRE, GMAT, JEE, NEET, 12th Board, 10th Board">
+	<meta name="author" content="Zapprep">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, initial-scale=1, user-scalable=no">
+
+	<!--favicon-->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/ionicons/css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.css">
+
+	<link rel="stylesheet" href="css/nivo-lightbox/nivo-lightbox.css">
+	<link rel="stylesheet" href="css/nivo-lightbox/nivo-lightbox-theme.css">
+
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- <link rel="stylesheet" href="css/colors/gray.css"> -->
+	<!-- <link rel="stylesheet" href="css/colors/green.css"> -->
+	<link rel="stylesheet" href="css/colors/cyan.css">
+
+	<!-- <link rel="stylesheet" href="css/colors/custom.css"> -->
+	<!-- Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+
+	<!-- Modernizr to provide HTML5 support for IE. -->
+	<script src="js/modernizr.custom.js"></script>
+
+	<script>
+		function initMap() {
+			var uluru = {lat: 13.032597, lng: 77.576392};
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 15,
+				center: uluru,
+				scrollwheel:  false
+			});
+			var marker = new google.maps.Marker({
+				position: uluru,
+				map: map
+			});
+		}
+		</script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCesbusadcAcmgR8q_f2b3uj-ykv6_lMTE&callback=initMap"></script>
+
+</head>
+<body id="home">
+
+	<!-- ****************************** Preloader ************************** -->
+	<div id="preloader"></div>
+
+
+	<!-- ****************************** Sidebar ************************** -->
+	<nav id="sidebar-wrapper">
+		<a id="menu-close" href="#" class="close-btn toggle">CLOSE <i class="ion-log-in"></i></a>
+	    <ul class="sidebar-nav">
+		    <li><a href="#home">Home</a></li>
+			<li><a href="#video">Video</a></li>
+			<li><a href="#bigfeatures">Features</a></li>
+			<li><a href="#features">Examinations</a></li>
+			<li><a href="#features-left-image">Student & Mentor</a></li>
+			<li><a href="#gallery">Screenshots</a></li>
+			<li><a href="#testimonial">Testimonial</a></li>
+			<!-- <li><a href="#team">Team</a></li> -->
+			<li><a href="#pricing">Support</a></li>
+			<!-- <li><a href="#subscribe">Subscribe</a></li> -->
+			<li><a href="#contact">Contact us</a></li>
+	    </ul>
+	</nav>
+
+
+	<!-- ****************************** Header ************************** -->
+	<header class="sticky" id="header">
+		<div class="container">
+			<div class="row" id="logo_menu">
+				<div class="col-xs-6"><a class="logo" href=""><img style="width: 30%;" src="img/logo_full.png"></a></div>
+				<div class="col-xs-6"><a id="menu-toggle" href="#" class="toggle" role="button" title="Navigation" data-toggle="tooltip" data-placement="left"><i class="ion-navicon"></i></a></div>
+			</div>
+		</div>
+	</header>
+
+
+
+	<!-- ****************************** Banner ************************** -->
+	<section id="banner" >
+		<video autoplay loop muted id="video-background" preload="metadata">
+		    <source src="video/video.webm" type="video/webm"></source>
+		    <source src="video/video.mp4" type="video/mp4"></source>
+		    <source src="video/video.ogv" type="video/ogv"></source>
+		</video>
+		<div class="banner-overlay"></div>
+		<div class="container">
+			<a class="slidedown wow animated zoomIn" data-wow-delay="2s" href="#video"><i class="ion-ios-download-outline"></i></a>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="headings">
+						<!-- <h1 class="wow animated fadeInDown">Pesonal Mentor for Examination Preparation</h1> -->
+						<p class="wow animated fadeInLeft"><strong>Pesonal Mentor for Examination Preparation.</strong> <br>Find personal tutor for doubt clearance , online classroom for discussion with peers and tutors
+							<!-- <strong>Responsive App Landing Page</strong> -->
+							 Video lessons and tests relevant to your examination</p>
+
+						<a href="https://play.google.com/store/apps/details?id=in.zapprep.ZapPrep&hl=en" class="btn btn-store wow animated bounceInUp">
+							<i class="ion-android-playstore"></i>
+							<span>Download From</span><br/>
+							Play Store
+						</a>
+					</div>
+				</div>
+				<div class="col-md-6 hidden-xs hidden-sm">
+					<div class="hand-container">
+					<img class="iphone-hand img_res wow animated bounceInUp" data-wow-duration="1.2s" src="img/iphone_hand.png" alt="">
+					<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- ****************************** Video section ************************** -->
+	<section id="video" class="block">
+		<div class="container">
+
+			<div class="title-box">
+				<h1 class="block-title wow animated zoomIn">
+					<span class="bb-top-left"></span>
+					<span class="bb-bottom-left"></span>
+					Video Preview
+					<span class="bb-top-right"></span>
+					<span class="bb-bottom-right"></span>
+				</h1>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-offset-2 col-sm-8 wow animated bounceInUp">
+					<!-- 16:9 aspect ratio -->
+					<div class="embed-responsive embed-responsive-16by9">
+					  <iframe class="embed-responsive-item async-iframe" data-src="https://www.youtube.com/embed/rY0G92j_KIM" width="560" height="315" allowfullscreen></iframe>
+					</div>
+					<p class="text-center italic">
+						<strong>A glimpse of Zapprep world.</strong>
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- ****************************** Big Features section ************************** -->
+	<section id="bigfeatures" class="img-block-3col block">
+
+		<div class="container">
+
+			<div class="title-box">
+				<h1 class="block-title wow animated zoomIn">
+					<span class="bb-top-left"></span>
+					<span class="bb-bottom-left"></span>
+					Features
+					<span class="bb-top-right"></span>
+					<span class="bb-bottom-right"></span>
+				</h1>
+			</div>
+
+
+			<div class="row">
+				<div class="col-sm-4">
+					<ul class="item-list-right item-list-big">
+						<li class="wow fadeInLeft animated">
+							<!-- <i class="ion-ios-monitor-outline"></i> -->
+							<h3>Mentor Market Place</h3>
+							<p>Select subject wise mentor by looking into their profile from mentor market place and get chat.</p>
+						</li>
+						<li class="wow fadeInLeft animated">
+							<!-- <i class="ion-ios-toggle-outline"></i> -->
+							<h3>One to one mentorship </h3>
+							<p>TTake appointment and chat personally with mentor and clear your doubt .</p>
+						</li>
+						<li class="wow fadeInLeft animated">
+							<!-- <i class="ion-ios-browsers-outline"></i> -->
+							<h3>Animated Video Lessonswith mentors</h3>
+							<p>Stydy with interactive and animated video lessons with chapter wise discussion controlled by mentor.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-4 col-sm-push-4">
+					<ul class="item-list-left item-list-big">
+						<li class="wow fadeInRight animated">
+							<!-- <i class="ion-ios-heart-outline"></i> -->
+							<h3>Personalised dashboard</h3>
+							<p>Easy access to all enroled mentorsand lessons .</p>
+						</li>
+						<li class="wow fadeInRight animated">
+							<!-- <i class="ion-ios-information-outline"></i> -->
+							<h3>Online Clssroom and Discussion with peers</h3>
+							<p>Enrol with mentors and take part in discussion with all peers.</p>
+						</li>
+						<li class="wow fadeInRight animated">
+							<!-- <i class="ion-ios-cart-outline"></i> -->
+							<h3>Subject wise tests</h3>
+							<p>Coming soon.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-4 col-sm-pull-4 text-center">
+					<div class="animation-box wow bounceIn animated">
+						<img class="highlight-left wow animated" src="img/spark.png" height="192" width="48" alt="">
+						<img class="highlight-right wow animated" src="img/spark.png" height="192" width="48" alt="">
+						<img class="screen" src="img/features_screen.png" alt="" height="581" width="300">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- ****************************** Specialty section ************************** -->
+	<section id="features" class="block">
+		<div class="container">
+			<div class="title-box">
+				<h1 class="block-title wow animated zoomIn">
+					<span class="bb-top-left"></span>
+					<span class="bb-bottom-left"></span>
+					Examinations
+					<span class="bb-top-right"></span>
+					<span class="bb-bottom-right"></span>
+				</h1>
+			</div>
+
+			<div class="row exam-cards-container">
+				<!-- <div class="col-sm-6 col-md-4">
+					<div class="feature-box wow animated flipInX animated">
+						<i class="ion-android-options"></i>
+						<h2>Tune up</h2>
+						<p>Browse across 14 category of exams.</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="feature-box wow animated flipInX animated">
+						<i class="ion-android-unlock"></i>
+						<h2>Security</h2>
+						<p>Find Mentors ,video lessons and test relevant to your exam.</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="feature-box wow animated flipInX animated">
+						<i class="ion-nuclear"></i>
+						<h2>Firewall</h2>
+						<p>Take part in discussion with peers in classroom.</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="feature-box wow animated flipInX animated">
+						<i class="ion-beer"></i>
+						<h2>HD Widgets</h2>
+						<p>Personalised dashboard for easy access of enroled mentors and lessons.</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="feature-box wow animated flipInX animated">
+						<i class="ion-search"></i>
+						<h2>Data Sync</h2>
+						<p>Write in app review for mentors and lessons.</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4">
+					<div class="feature-box wow animated flipInX animated">
+						<i class="ion-android-sync"></i>
+						<h2>Customize</h2>
+						<p>Chat and clear your doubts personally with metor.</p>
+					</div>
+				</div> -->
+				<div class="exam-cards">
+					CAT
+				</div>
+				<div class="exam-cards">
+					UPSC
+				</div>
+				<div class="exam-cards">
+					SSC
+				</div>
+				<div class="exam-cards">
+					IBPS
+				</div>
+				<div class="exam-cards">
+					Placements
+				</div>
+				<div class="exam-cards">
+					GATE
+				</div>
+				<div class="exam-cards">
+					NDA
+				</div>
+				<div class="exam-cards">
+					12th Board
+				</div>
+				<div class="exam-cards">
+					NEET
+				</div>
+				<div class="exam-cards">
+					JEE
+				</div>
+				<div class="exam-cards">
+					SAT
+				</div>
+				<div class="exam-cards">
+					GRE
+				</div>
+				<div class="exam-cards">
+					GMAT
+				</div>
+				<div class="exam-cards">
+					10th Board
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</section>
+
+
+	<!-- ****************************** Left Image section ************************** -->
+	<section id="features-left-image" class="block">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-sm-6 wow fadeInLeft animated">
+					<div class="phone-image">
+						<img class="img-responsive" src="img/mentorLeft.png" alt="">
+					</div>
+				</div><!--/col-sm-6-->
+
+				<div class="col-sm-6 wow fadeInRight animated">
+
+					<div class="title-box text-left">
+						<h1 class="block-title wow animated zoomIn">
+							<span class="bb-top-left"></span>
+							<span class="bb-bottom-left"></span>
+							For Students
+							<span class="bb-top-right"></span>
+							<span class="bb-bottom-right"></span>
+						</h1>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<p>Browse across 14 category of exams and find Mentors ,video lessons and test relevant to your exam </p>
+							<ul class="feature-list">
+								<li>
+									<!-- <i class="ion-battery-half"></i> -->
+									 Chat and clear your doubts personally with metor  </li>
+								<li>
+									<!-- <i class="ion-bug"></i> -->
+									 Take part in discussion with peers in classroom</li>
+								<li>
+									<!-- <i class="ion-toggle"></i> -->
+									 Personalised dashboard for easy access of enroled mentors and lessons </li>
+								<li>
+									<!-- <i class="ion-gear-a"></i> -->
+									 Write in app review for mentors and lessons</li>
+							</ul>
+						</div>
+					</div>
+				</div><!--/col-sm-6-->
+
+			</div><!--/row-->
+
+		</div><!--/container-->
+	</section>
+
+
+	<!-- ****************************** Right Image section ************************** -->
+	<section id="features-right-image" class="block">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-sm-6 wow fadeInLeft animated">
+					<div class="title-box text-left">
+						<h1 class="block-title wow animated zoomIn">
+							<span class="bb-top-left"></span>
+							<span class="bb-bottom-left"></span>
+							For Mentors & Sellers
+							<span class="bb-top-right"></span>
+							<span class="bb-bottom-right"></span>
+						</h1>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+
+							<ul class="feature-list">
+								<li>
+									<!-- <i class="ion-battery-half"></i> -->
+									 Create personal profile from application</li>
+								<li>
+									<!-- <i class="ion-bug"></i> -->
+									 Create your subject list for particualar exam which you want to teach </li>
+								<li>
+									<!-- <i class="ion-toggle"></i> -->
+									 Make regular announcement to students enroled under your subject </li>
+								<li>
+									<!-- <i class="ion-gear-a"></i> -->
+									 Create test for particular exams (Coming soon ) </li>
+								<li>
+									<!-- <i class="ion-gear-a"></i> -->
+									 Peronalised dash board for your subject </li>
+							</ul>
+						</div>
+					</div>
+				</div><!--/col-sm-6-->
+
+				<div class="col-sm-6 wow fadeInRight animated">
+					<div class="phone-image">
+						<img class="img-responsive" src="img/studentRight.png" alt="">
+					</div>
+				</div><!--/col-sm-6-->
+			</div><!--/row-->
+
+		</div><!--/container-->
+	</section>
+
+
+	<!-- ****************************** Gallery section ************************** -->
+	<section id="gallery" class="block">
+		<div class="container">
+
+			<div class="title-box">
+				<h1 class="block-title wow animated zoomIn">
+					<span class="bb-top-left"></span>
+					<span class="bb-bottom-left"></span>
+					Screenshots
+					<span class="bb-top-right"></span>
+					<span class="bb-bottom-right"></span>
+				</h1>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<div id="screenshots" class="owl-carousel owl-theme">
+					  <a href="img/screenshots/1.jpg" class="item" data-lightbox-gallery="screenshots">
+					  	<img src="img/screenshots/1.jpg" class="img_res wow animated zoomIn" alt="">
+					  </a>
+					  <a href="img/screenshots/2.jpg" class="item" data-lightbox-gallery="screenshots">
+					  	<img src="img/screenshots/2.jpg" class="img_res wow animated zoomIn" alt="">
+					  </a>
+					  <a href="img/screenshots/3.jpg" class="item" data-lightbox-gallery="screenshots">
+					  	<img src="img/screenshots/3.jpg" class="img_res wow animated zoomIn" alt="">
+					  </a>
+					  <a href="img/screenshots/4.jpg" class="item" data-lightbox-gallery="screenshots">
+					  	<img src="img/screenshots/4.jpg" class="img_res wow animated zoomIn" alt="">
+					  </a>
+					  <a href="img/screenshots/5.jpg" class="item" data-lightbox-gallery="screenshots">
+					  	<img src="img/screenshots/5.jpg" class="img_res wow animated zoomIn" alt="">
+					  </a>
+					  <a href="img/screenshots/6.jpg" class="item" data-lightbox-gallery="screenshots">
+					  	<img src="img/screenshots/6.jpg" class="img_res wow animated zoomIn" alt="">
+					  </a>
+					</div>
+					 <div class="customNavigation">
+					  <a class="btn prev gallery-nav wow animated bounceInLeft"><i class="ion-ios-arrow-left"></i></a>
+					  <a class="btn next gallery-nav wow animated bounceInRight"><i class="ion-ios-arrow-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- ****************************** Testimonial ************************** -->
+	<section id="testimonial" class="block">
+		<div class="banner-overlay"></div>
+
+		<div class="container">
+			<div id="review" class="owl-carousel owl-theme wow animated bounceInUp">
+				<div class="item">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+							<div class="client-pic"><img class="img_res" src="img/sankalp.png" alt=""></div>
+							<p class="review-star">
+								<i class="ion-star"></i>
+								<i class="ion-star"></i>
+								<i class="ion-star"></i>
+								<i class="ion-star"></i>
+								<i class="ion-star-outline"></i>
+							</p>
+							<p class="review-desc">
+								It's really great to connect with students and guide them through the admission process of MS programs in USA .
+							</p>
+							<p class="client-name">
+								Sankalp
+							</p>
+							<p class="client designation">( MS - USC , CA-USA) </p>
+							<p class="client designation">Mentor GRE (Quant,verbal,Admission Guidance)</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="row">
+						<div class="col-sm-6 col-md-offset-3">
+							<div class="client-pic"><img class="img_res" src="img/himanshu.png" alt=""></div>
+							<p class="review-star">
+								<i class="ion-star"></i>
+								<i class="ion-star"></i>
+								<i class="ion-star"></i>
+								<i class="ion-star"></i>
+								<i class="ion-star-outline"></i>
+							</p>
+							<p class="review-desc">
+								Zapprep is a great initiative for students who seek mentors online for government exams like IBPS, Railway, SSC, etc.
+							</p>
+							<p class="client-name">
+								Himanshu
+							</p>
+							<p class="client designation">( PO - Grameen Bank ) </p>
+							<p class="client designation">Mentor IBPS,SSC, Railway.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="row">
+						<div class="col-sm-6 col-md-offset-3">
+							<div class="client-pic"><img class="img_res" src="img/ashish.jpeg" alt=""></div>
+							<p class="review-star">
+								<i class="ion-star"></i>
+								<i class="ion-star"></i>
+								<i class="ion-star"></i>
+								<i class="ion-star"></i>
+								<i class="ion-star-outline"></i>
+							</p>
+							<p class="review-desc">
+								Zapprep is easy to use by students, also classroom discussion with peers is an amazing feature .
+							</p>
+							<p class="client-name">
+								Ashish Khurana
+							</p>
+							<p class="client designation">( CRT - Trainer ) </p>
+							<p class="client designation">Mentor Quant (GMAT, GRE,Placement,IBPS)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- ****************************** Team section ************************** -->
+	<!-- <section id="team" class="block">
+		<div class="container">
+			<div class="title-box">
+				<h1 class="block-title wow animated zoomIn">
+					<span class="bb-top-left"></span>
+					<span class="bb-bottom-left"></span>
+					Development Team
+					<span class="bb-top-right"></span>
+					<span class="bb-bottom-right"></span>
+				</h1>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-3">
+					<div class="team-member wow animated fadeIn" data-wow-delay="0.3s">
+						<div class="border-img">
+							<img src="img/dev-2.jpg" class="img_res team-pic" alt="">
+							<div class="border"></div>
+						</div>
+						<h2 class="wow animated fadeInDown" data-wow-delay="0.7s">Jhon Doe</h2>
+						<p class="wow animated fadeIn" data-wow-delay="0.7s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+						<ul class="team-social">
+							<li class="wow animated fadeInLeft facebook"><a href="#"><i class="ion-social-facebook"></i></a></li>
+							<li class="wow animated fadeInLeft linkedin"><a href="#"><i class="ion-social-linkedin"></i></a></li>
+							<li class="wow animated fadeInRight googleplus"><a href="#"><i class="ion-social-googleplus-outline"></i></a></li>
+							<li class="wow animated fadeInRight github"><a href="#"><i class="ion-social-github"></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-3">
+					<div class="team-member wow animated fadeIn" data-wow-delay="0.3s">
+						<div class="border-img">
+							<img src="img/dev-3.jpg" class="img_res team-pic" alt="">
+							<div class="border"></div>
+						</div>
+						<h2 class="wow animated fadeInDown" data-wow-delay="0.7s">Jane Doe</h2>
+						<p class="wow animated fadeIn" data-wow-delay="0.7s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+						<ul class="team-social">
+							<li class="wow animated fadeInLeft facebook"><a href="#"><i class="ion-social-facebook"></i></a></li>
+							<li class="wow animated fadeInLeft linkedin"><a href="#"><i class="ion-social-linkedin"></i></a></li>
+							<li class="wow animated fadeInRight googleplus"><a href="#"><i class="ion-social-googleplus-outline"></i></a></li>
+							<li class="wow animated fadeInRight github"><a href="#"><i class="ion-social-github"></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-4">
+					<div class="team-member wow animated fadeIn" data-wow-delay="0.3s">
+						<div class="border-img">
+							<img src="img/dev-2.jpg" class="img_res team-pic" alt="">
+							<div class="border"></div>
+						</div>
+						<h2 class="wow animated fadeInDown" data-wow-delay="0.7s">Jhon Doe</h2>
+						<p class="wow animated fadeIn" data-wow-delay="0.7s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+						<ul class="team-social">
+							<li class="wow animated fadeInLeft facebook"><a href="#"><i class="ion-social-facebook"></i></a></li>
+							<li class="wow animated fadeInLeft linkedin"><a href="#"><i class="ion-social-linkedin"></i></a></li>
+							<li class="wow animated fadeInRight googleplus"><a href="#"><i class="ion-social-googleplus-outline"></i></a></li>
+							<li class="wow animated fadeInRight github"><a href="#"><i class="ion-social-github"></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-3 col-sm-3">
+					<div class="team-member wow animated fadeIn" data-wow-delay="0.3s">
+						<div class="border-img">
+							<img src="img/dev-4.jpg" class="img_res team-pic" alt="">
+							<div class="border"></div>
+						</div>
+						<h2 class="wow animated fadeInDown" data-wow-delay="0.7s">Jhon Doe</h2>
+						<p class="wow animated fadeIn" data-wow-delay="0.7s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua.</p>
+						<ul class="team-social">
+							<li class="wow animated fadeInLeft facebook"><a href="#"><i class="ion-social-facebook"></i></a></li>
+							<li class="wow animated fadeInLeft linkedin"><a href="#"><i class="ion-social-linkedin"></i></a></li>
+							<li class="wow animated fadeInRight googleplus"><a href="#"><i class="ion-social-googleplus-outline"></i></a></li>
+							<li class="wow animated fadeInRight github"><a href="#"><i class="ion-social-github"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+
+	<!-- ****************************** Pricing section ************************** -->
+	<section id="pricing" class="block">
+		<div class="banner-overlay bg-color-grad"></div>
+		<div class="container">
+			<div class="title-box">
+				<h1 class="block-title title-light wow animated zoomIn">
+					<span class="bb-top-left"></span>
+					<span class="bb-bottom-left"></span>
+					Support
+					<span class="bb-top-right"></span>
+					<span class="bb-bottom-right"></span>
+				</h1>
+			</div>
+			<div class="row">
+				<div class="col-md-offset-1 col-md-10">
+					<ul class="pricing-table">
+						<li class="gold wow flipInY animated" style="visibility: visible;">
+							<h3>Student</h3>
+							<!-- <span><small>Are you a student looking for hrlp in exam preparation</small> </span> -->
+							<ul class="benefits-list">
+								<li>Are you a student looking for help in exam preparation</li>
+								<li>Write to <a href="mailto:students@zapprep.in">students@zapprep.in</a></li>
+								<!-- <li>Responsive</li>
+								<li>Documentation</li>
+								<li class="not">Multiplatform</li>
+								<li class="not">Video background</li>
+								<li class="not">Support</li> -->
+							</ul>
+							<!-- <a href="#" target="_blank" class="buy"><i class="ion-ios-cart-outline"></i></a> -->
+						</li>
+						<li class="gold wow flipInY animated" data-wow-delay="0.4s" style="visibility: visible;-webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; animation-delay: 0.4s;">
+							<!-- <div class="stamp"><i class="ion-android-star-outline"></i>Best choice</div> -->
+							<h3>Mentor</h3>
+							<!-- <span><small>Are you a student looking for help in exam preparation</small> </span> -->
+							<ul class="benefits-list">
+								<li>Want to mentor on Zapprep</li>
+								<li>Write to <a href="mailto:mentor@zapprep.in">mentor@zapprep.in</a></li>
+								<!-- <li>Documentation</li>
+								<li>Multiplatform</li>
+								<li>Video background</li>
+								<li>Support</li> -->
+							</ul>
+							<!-- <a href="#" target="_blank" class="buy"> <i class="ion-ios-cart-outline"></i></a> -->
+						</li>
+						<li class="gold wow flipInY animated" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
+							<h3>Seller</h3>
+							<!-- <span><small>Are you a student looking for hrlp in exam preparation</small> </span> -->
+							<ul class="benefits-list">
+								<li>Want to sell test series, video lessons or study material</li>
+								<li>Write to <a href="mailto:seller@zapprep.in">seller@zapprep.in</a></li>
+								<!-- <li>Responsive</li>
+								<li>Documentation</li>
+								<li>Multiplatform</li>
+								<li class="not">Video background</li>
+								<li class="not">Support</li> -->
+							</ul>
+							<!-- <a href="#" target="_blank" class="buy"> <i class="ion-ios-cart-outline"></i></a> -->
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- ****************************** Subscribe section ************************** -->
+	<!-- <section id="subscribe" class="block">
+		<div class="banner-overlay" style="background: rgba(255, 255, 255, 0.8)"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1">
+					<p class="susbcribe-text">
+					<strong>Subscribe to our email list to get the latest update about our amazing app</strong>
+					<br/>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</div>
+		</div>
+		<div class="container subscribe-wrap">
+			<div class="row">
+				<div class="col-sm-12 wow animated bounceInUp">
+					<form role="form" class="mailchimp">
+
+						<div class="input-group">
+						  <input type="email" name="email" id="subscriber-email" class="form-control" placeholder="Your Email Address">
+						  <span class="input-group-btn">
+						    <button class="btn btn-custom" type="submit" id="subscribe-button">GET UPDATES</button>
+						  </span>
+						</div><!-- /input-group -->
+
+						<!-- SUCCESS OR ERROR MESSAGES -->
+						<!-- <span class="subscription-success"></span>
+						<span class="subscription-error"></span>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+
+	<!-- ****************************** Contact section ************************** -->
+	<!-- <section id="contact" class="block">
+			<div class="container">
+				<div class="title-box">
+					<h1 class="block-title wow animated zoomIn">
+						<span class="bb-top-left"></span>
+						<span class="bb-bottom-left"></span>
+							Contact Us
+						<span class="bb-top-right"></span>
+						<span class="bb-bottom-right"></span>
+					</h1>
+				</div>
+				<div class="row">
+					<div class="col-sm-4 address wow fadeInLeft animated">
+						<ul class="address-list">
+							<li><i class="ion-location"></i> <span>1537 Flint Street <br>Tumon, MP 96911</span></li>
+							<li><i class="ion-android-call"></i> <span>670-898-2847 </span></li>
+							<li><i class="ion-email"></i> <span>info@domain.com</span></li>
+							<li><i class="ion-earth"></i> <span>www.themewagon.com</span></li>
+						</ul>
+					</div>
+					<div class="col-sm-8 mailbox wow fadeInRight animated">
+						<form name="sentMessage" id="contactForm" novalidate>
+	                        <div class="row">
+	                            <div class="col-md-6">
+	                                <div class="form-group">
+	                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required>
+	                                    <p class="help-block text-danger"></p>
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+	                                    <p class="help-block text-danger"></p>
+	                                </div>
+	                                <div class="form-group">
+	                                    <input type="text" class="form-control" placeholder="Your Subject *" id="subject" required data-validation-required-message="Please enter your phone number.">
+	                                    <p class="help-block text-danger"></p>
+	                                </div>
+	                            </div>
+	                            <div class="col-md-6">
+	                                <div class="form-group">
+	                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+	                                    <p class="help-block text-danger"></p>
+	                                    <div id="success"></div>
+		                                <button type="submit" class="polo-btn contact-submit"><i class="ion-paper-airplane"></i></button>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="alert alert-danger error">Error!  E-mail must be valid and message must be longer than 1 character.</div>
+	                        <div class="alert alert-success success">Your message has been sent successfully.</div>
+	                    </form>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+	</section> -->
+
+<div id="contact" class="about__contactDetailsMain">
+	<div class="about__contactDetailsInner">
+		<div class="about__contactDetails">
+			<div class="about__contactAll">
+				<div class="about__contactDetailsTitle">Reach Us at :</div>
+				<div class="about__contactDetailsContent">
+					<div class="about__contactDetailsAddress"><span>Address :</span> No 261/2 ACES Layout , Ashwath Nagar, Sanjay Nagar Main Road , Bangalore - 560094 </div>
+					<!-- <div class="about__contactDetailsAddress"><span>Contact No :</span> +91-9611372325</div> -->
+					<div class="about__contactDetailsEmail"><span>Email :</span> <a href="mailto:contact@zapprep.in">contact@zapprep.in</a> </div>
+				</div>
+			</div>
+		</div>
+		<div class="about__contactDetailsMap">
+			<div class="WScontactPgWrapper__mapContainer">
+				<div id="map" style="height: 430px;position: relative;overflow: hidden;width: 100%;"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<!-- ****************************** Footer ************************** -->
+	<section id="footer" class="block">
+		<div class="container text-center">
+			<div class="footer-logo">
+				<h1>Z A P P R E P</h1>
+			</div>
+			<ul class="social-icons">
+				<li class="wow animated fadeInLeft facebook"><a href="https://www.facebook.com/Zap-Prep-Education-Services-170065906725829/"><i class="ion-social-facebook"></i></a></li>
+				<!-- <li class="wow animated fadeInRight twitter"><a href="#"><i class="ion-social-twitter"></i></a> -->
+				<li class="wow animated fadeInLeft linkedin"><a href="https://www.linkedin.com/company/zap-prep-education-services"><i class="ion-social-linkedin"></i></a></li>
+				<li class="wow animated fadeInRight googleplus"><a href="https://plus.google.com/u/0/b/111327562943093738035/111327562943093738035/about"><i class="ion-social-googleplus-outline"></i></a></li>
+				<li class="wow animated fadeInRight twitter"><a href="https://twitter.com/zapprep1234"><i class="ion-social-twitter"></i></a></li>
+				<!-- <li class="wow animated fadeInRight github"><a href="#"><i class="ion-social-github"></i></a> -->
+			</ul>
+
+			<div class="copyright">
+				<div class="credits">
+					Made With <i class="ion-heart"></i> by <a href="http://www.zapprep.info" target="_blank">Team Zapprep</a>
+				</div>
+				<div>©2017 Zapprep Education Technology PVT Ltd</div>
+			</div>
+		</div><!-- container -->
+	</section>
+
+
+
+	<!-- ****************************** Back to top ************************** -->
+	<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+
+
+	<!-- All the scripts -->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/nivo-lightbox.min.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/script.js"></script>
+
 </body>
+</html>
