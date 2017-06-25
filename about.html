@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <!--link(rel="stylesheet" href="css/style.css")-->
+    <script src="js/jquery.min.js"></script>
+
+    <script>
+      function initMap() {
+        var uluru = {lat: 13.032597, lng: 77.576392};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru,
+          scrollwheel:  false
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+      </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCesbusadcAcmgR8q_f2b3uj-ykv6_lMTE&callback=initMap"></script>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  </head>
+</html>
+<body>
+  <div style="" class="main_cont">
+    <div role="navigation" class="navbar navbar-inverse navbar-fixed-top mobi scroll-fixed-navbar">
+      <div style="padding: 1.2%;" class="container mobii_nav">
+        <div class="navbar-header">
+          <button data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle" style="z-index: 555;"><span class="sr-only">Toggle nav</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/index.html" style="font-size: 21px;font-weight:800;top: -2px;" class="navbar-brand"><img style="width: 20%;" src="img/logo_full.png" /></a>
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <!--<li><a href="#home">Home</a></li>-->
+            <li style=""><a href="/about.html" title="About Us">About Us</a></li>
+            <li style=""><a href="/terms.html" title="Terms">Terms & Policies</a></li>
+            <li style=""><a href="mailto:contact@zapprep.in" title="Contact Us">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div style="width: 100%;padding: 0px;position: relative;top: 60px;overflow-x: hidden;overflow-y: auto;" class="container">
+
+
+      <div class="about__contentMain">
+        <div class="about__contentInner">
+          <div class="about__companyDetails">
+            <div class="about__companyDetailsTitle">About Us</div>
+            <div class="about__companyDetailsContent">Zap Prep brings top mentors for UPSC , Bank po, ssc  cat placement preparation, 10th board , 12th board JEE NEET on mobile .Select personal mentor of your choice from available mentors. Connect with mentor, share image, link or text of your doubt, chat with them and solve it. A student can also find relevant study material for their exams.</div>
+          </div>
+          <div class="about__contactDetailsMain">
+            <div class="about__contactDetailsInner">
+              <div class="about__contactDetails">
+                <div class="about__contactAll">
+                  <div class="about__contactDetailsTitle">Reach Us at :</div>
+                  <div class="about__contactDetailsContent">
+                    <div class="about__contactDetailsAddress"><span>Address :</span> No 261/2 ACES Layout , Ashwath Nagar, Sanjay Nagar Main Road , Bangalore - 560094 </div>
+                    <div class="about__contactDetailsAddress"><span>Contact No :</span> +91-9611372325</div>
+                    <div class="about__contactDetailsEmail"><span>Email :</span> contact@zapprep.in </div>
+                  </div>
+                </div>
+              </div>
+              <div class="about__contactDetailsMap">
+                <div class="WScontactPgWrapper__mapContainer">
+                  <div id="map" style="height: 430px;position: relative;overflow: hidden;width: 100%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer" class="row">
+        <div style="display: -webkit-inline-box;" class="col-md-8"><strong style="line-height:3;">FIND US ON</strong>
+          <div style="margin-left: 10%;" class="social-icons"><a href="https://www.facebook.com/Zap-Prep-Education-Services-170065906725829/" class="social-icon social-icon--facebook"><i class="fa fa-facebook"></i>
+              <div class="tooltip">Facebook</div></a><a href="https://plus.google.com/u/0/b/111327562943093738035/111327562943093738035/about" class="social-icon social-icon--google-plus"><i class="fa fa-google-plus"></i>
+              <div class="tooltip">google-plus</div></a><a href="https://www.linkedin.com/company/zap-prep-education-services" class="social-icon social-icon--linkedin"><i class="fa fa-linkedin"></i>
+              <div class="tooltip">LinkedIn</div></a></div>
+        </div>
+        <div class="col-md-4">
+          <label style="line-height:4;">© Copyright 2016  Zap Prep education services</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
