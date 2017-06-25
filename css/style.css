@@ -1310,3 +1310,14 @@ ul.social-icons li a {
   box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
   display: inline-block;
 }
+.termsModal .modal-dialog {
+    -webkit-transform: translate(0,15%) !important;
+    -ms-transform: translate(0,15%) !important;
+    -o-transform: translate(0,15%) !important;
+    transform: translate(0,15%) !important;
+}
+.termsModal .modal-body {
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
